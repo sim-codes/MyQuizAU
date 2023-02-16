@@ -9,20 +9,50 @@
 </head>
 <body>
     <h1>Take Exam</h1>
-    <main>
+    <main class="main0">
         <div class="box">
           <form action="./exam2.html">
-           <label for="faculty">Faculty <input type="text" name="faculty" require></label>
+         <label for="faculty">Faculty <select name="Faculty">
+          <option value="option"></option>
+            <option value="fos">Faculty of Science</option>
+            <option value="fol">Faculty of Law</option>
+            <option value="fbms">Faculty of Basic Medical Sciences</option>
+            <option value="fbss">Faculty of Business and Social Sciences</option>
+            <option value="foe">Faculty of Engineering</option>
+            <option value="foa">Faculty of Art</option>
+          </select></label>
            <br>
-           <label for="department">Department <input type="text" name="department" required></label>
+           <label for="department">Department <select name="department">
+            <option value="option"></option>
+            <option value="csc">Computer Science</option>
+            <option value="cis">Computer Information System</option>
+            <option value="mcb">Micro Biology</option>
+            <option value="bch">Biochemistry</option>
+           </select></label>
            <br>
-           <label for="level">Level <input type="text" name="level" required></label>
+           <label for="level">Level <select name="level">
+            <option value="option"></option>
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="300">300</option>
+            <option value="400">400</option>
+            <option value="500">500</option>
+           </select></label>
            <br>
-           <label for="subject">Subject <input type="text" name="subject" required></label>
+           <label for="subject">Subject <select name="subject">
+            <option value="option"></option>
+            <option value="mth">Discrete Maths</option>
+            <option value="bio">Biology</option>
+            <option value="chm">Chemistry</option>
+            <option value="Ges">Life and Teachings of Christ</option>
+           </select></label>
            <br>
            <input type="submit" value="Submit" class="button">
+           <h5 class="page"><a href="./myquiz.html">Home Page</a></h5>
           </form>
         </div>
     </main>
+    <br>
+     <marquee behavior="scroll" direction="right">This is just for educational purposes only, study your course curriculum for exam and test</marquee>
 </body>
 </html>

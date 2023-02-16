@@ -5,23 +5,30 @@ h1 {
     text-align: center;
 }
 body {
-    background-color: #d9d9d9;
+    background-color: #2568ab;
+}
+form {
+   margin-left: 50px;
 }
 .box {
-    background-color: #aeaeae;
+    background-color: #dae6ef;
     list-style: none;
-    padding: 150px;
-    margin-top: 20px;
+    padding: 100px;
+    margin-top: 10px;
     line-height: 27px;
     font-size: 20px;
     border-radius: 5px;
+    height: 70vh;
 }
-main {
+.main0 {
     margin: auto;
     text-align: center;
-    width: 50%;
-    height: 80%;
+    width: 50%;   
 }
+.main1 {
+    margin: auto; 
+    max-width: 50%;
+} 
 a {
     text-decoration: none;
     color: black;
@@ -30,7 +37,8 @@ footer {
     bottom: 0;
     position: fixed;
     padding: 8px;
-    background-color: #aeaeae;
+    background-color: rgb(1, 1, 62);
+    color: white;
     width: 100%;
     height: 2em;
     left: 0;
@@ -40,22 +48,44 @@ form {
     line-height: 35px;
     
 }
-input {
-    border-color: #858585;
-    padding: 5px;
+select {
     width: 60%;
-    background-color: #858585;
-    border: none;
-    border-radius: 3px;
 }
-.button {
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 30px;
-    background-color: #858585;
-}
+
 button {
     padding: 40px;
-    background-color: #858585;
-    border-color: #858585;
+    background-color: #fffefa;
+    border-color: #fffefa;
+}
+.page {
+   font-weight: lighter;
+   margin-bottom: 20px;
+}
+.but1 {
+    padding: 15px;
+    position: absolute;
+    left: 350px;
+    top: 50px;
+}
+.but2 {
+    padding: 15px;
+    position: absolute;
+    right: 350px;
+    top: 50px;
+}
+.prev {
+    padding: 15px;
+    position: absolute;
+    left: 350px;
+    bottom: 200px;
+}
+.next {
+    padding: 15px;
+    position: absolute;
+    right: 350px;
+    bottom: 200px;
+}
+.list {
+  list-style: none;
+  
 }
