@@ -1,0 +1,22 @@
+a{ 
+    text-decoration: none;
+}
+
+input{
+    cursor: pointer;
+    display: block;
+    margin: 0.5em;
+    padding: 0.5em;
+    color: white;
+    min-height: 3em;
+    min-width: 15em;
+    background-color: #012147;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+input:hover{
+    background-color: #FCD12A;
+    transition: 0.5ms;
+}

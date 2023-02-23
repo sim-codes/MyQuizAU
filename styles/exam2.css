@@ -1,0 +1,30 @@
+input{
+    cursor: pointer;
+    padding: 0.5em;
+    color: white;
+    min-height: 3em;
+    min-width: 15em;
+    background-color: #012147;
+    border: none;
+    border-radius: 5px;
+    margin: 3em;
+}
+
+a{
+    text-decoration: none;
+}
+
+input:hover{
+    background-color: #FCD12A;
+    transition: 0.5ms;
+}
+
+.box{
+    text-align: center;
+    display: block;
+    justify-content: center;
+}
+
+p{
+    padding: 2em;
+}

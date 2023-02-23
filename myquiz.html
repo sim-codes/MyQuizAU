@@ -5,20 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyQuizAU</title>
-    <link rel="stylesheet" href="./myquiz.css">
+    <link rel="stylesheet" href="./styles/myquiz.css">
+    <link rel="stylesheet" href="./styles/global.css">
 </head>
 <body>
-    <h1>Home Page</h1>
+    <h1>Welcome</h1>
     <main class="main0">
         <div class="box">
-            <a href="./exam.html"><li>Take Exam</li></a>
-            <a href="#"><li>Take Quiz</li></a>
-            <a href="#"><li>View Past Questions</li></a>
-            <a href="./contact.html"><li>Contact us</li></a>
+            <a href="./exam.html">
+                <input type="button" value="TAKE EXAM" class="exam-btn">
+            </a>
+
+            <a href="./exam.html">
+                <input type="button" value="TAKE QUIZ" class="quiz-btn">
+            </a>
+
+            <a href="#">
+                <input type="button" value="VIEW PAST QUESTION" class="pq-btn">
+            </a>
+
+            <a href="#">
+                <input type="button" value="CONTACT" class="contact-btn">
+            </a>
         </div>
     </main>
     <br>
-    <marquee behavior="scroll" direction="right">This is just for educational purposes only, study your course curriculum for exam and test</marquee>
-    <footer>&copy; 200lv csc 2021/2022</footer>
+    <marquee behavior="scroll" direction="left">This is just for educational purposes only, study your course curriculum for exam and test</marquee>
+    <footer>
+        &copy; 200lv CSc 2021/2022
+    </footer>
 </body>
 </html>

@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: linear-gradient(to right, #17a2b8, #007bff);
+    outline: none;
+    min-height: 95vh;
+    position: relative;
+}
+
+h1{
+    font-size: 4em;
+    margin-top: 0.5em;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: rgba(50, 50, 93, 0.25);
+}
+
+select{
+    font-size: 1em;
+    padding: 2px;
+    min-height: 3em;
+    width: 15em;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.submit-btn{
+    margin-top: 5px;
+    font-size: 1em;
+    min-height: 3em;
+    width: 15em;
+    background-color: #FCD12A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

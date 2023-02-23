@@ -11,6 +11,9 @@ form {
    margin-left: 50px;
 }
 .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #dae6ef;
     list-style: none;
     padding: 100px;
@@ -19,11 +22,12 @@ form {
     font-size: 20px;
     border-radius: 5px;
     height: 70vh;
+    max-width: 100%;
 }
 .main0 {
     margin: auto;
     text-align: center;
-    width: 50%;   
+    width: 70%;   
 }
 .main1 {
     margin: auto; 

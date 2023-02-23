@@ -1,0 +1,61 @@
+.exam-box{
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+}
+
+label{
+    display: block;
+}
+
+input{
+    margin: 0.5em;
+    cursor: pointer;
+    min-height: 2em;
+    min-width: 2em;
+    border: none;
+    
+}
+
+.qtn-no{
+    position: absolute;
+    top: 20px;
+}
+
+.time{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.prev-btn{
+    background-color: #012147;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5em;
+    position: absolute;
+    bottom: 10px;
+    min-height: 2em;
+    min-width: 5em;
+}
+
+.nxt-btn{
+    position: absolute;
+    color: white;
+    background-color: #012147;
+    border-radius: 5px;
+    padding: 0.5em;
+    right: 10px;
+    bottom: 10px;
+    min-height: 2em;
+    min-width: 5em;
+}
+
+
+
+h2{
+    margin-top: 2em;
+    text-align: center;
+}

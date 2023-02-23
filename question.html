@@ -5,23 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exam</title>
-    <link rel="stylesheet" href="./myquiz.css">
+    <link rel="stylesheet" href="./styles/question.css">
+    <link rel="stylesheet" href="./styles/global.css">
 </head>
 <body>
-    <main class="main1">
-        <div class="box">
-        <button class="but1">1</button>
-        <button class="but2">12:20</button>
-        <label>What is a cell?<ul class="list">
-        <li><input type="radio"  name="question">Human</li>
-        <li><input type="radio"  name="question">Micro organism</li>
-        <li><input type="radio"  name="question">Animal</li>
-        <li><input type="radio"  name="question">None of the above </li></label></ul>
-        <button class="prev">prev</button>
-        <button class="next">next</button>
+    <h1>Take Exam</h1>
+    <main class="main0">
+        <div class="exam-box">
+            <h4 class="qtn-no">1/3</h4>
+            <h4 class="time">12:20</h4>
+
+                <h2>What is a cell?</h2>
+                <label for="human">
+                    <input type="radio"  name="option">Human
+                </label>
+                
+                <label for="micro-organism">
+                    <input type="radio"  name="option">Micro organism
+                </label>
+
+                <label for="animal">
+                    <input type="radio"  name="option">Animal
+                </label>
+
+                <label for="none">
+                    <input type="radio"  name="option">None of the above
+                </label>
+
+            <input type="button" value="PREV" class="prev-btn">
+            <input type="button" value="NEXT" class="nxt-btn">
+            
         </div>
     </main>
+    <h3 class="home-pg"><a href="./myquiz.html">Home Page</a></h3>
     <br>
     <marquee behavior="scroll" direction="right">This is just for educational purposes only, study your course curriculum for exam and test</marquee>
+
+    <footer>
+        &copy; 200lv CSc 2021/2022
+    </footer>
+
 </body>
 </html>
