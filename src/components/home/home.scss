@@ -1,0 +1,46 @@
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    }
+    .emoji{
+    display: flex;
+    float: left;
+     font-size: 30px;
+     animation: waving-hand 3.5s infinite;
+     transform-origin: 70% 70%;
+  }
+  
+  
+  @keyframes waving-hand {
+  0%{
+     transform: rotate(0deg);
+  }
+  10%{
+     transform: rotate(14deg);
+  }
+  20%{
+     transform: rotate(-8deg);
+  }
+  30%{
+     transform: rotate(14deg);
+  }
+  40%{
+     transform: rotate(-4.0deg);
+  }
+  50%{
+     transform: rotate(10deg);
+  }
+  60%{
+     transform: rotate(0deg);
+  }
+  100%{
+     transform: rotate(0deg);
+  }
+  }
+  
