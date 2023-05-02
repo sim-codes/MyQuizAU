@@ -10,6 +10,7 @@ body {
 form {
    margin-left: 50px;
 }
+<<<<<<< HEAD
 .box {
     display: flex;
     justify-content: center;
@@ -24,18 +25,27 @@ form {
     height: 70vh;
     max-width: 100%;
 }
+=======
+>>>>>>> 95486599539d448cefd0ac2a4b81a8e483a57b47
 .main0 {
-    margin: auto;
+    background-color: #dae6ef;
     text-align: center;
+<<<<<<< HEAD
     width: 70%;   
+=======
+>>>>>>> 95486599539d448cefd0ac2a4b81a8e483a57b47
 }
-.main1 {
-    margin: auto; 
-    max-width: 50%;
-} 
-a {
+.box{
+   padding: 50px;
+   margin: 100px;
+   font-size: 22px;
+}
+.box li{
+  text-decoration: none;
+  list-style-type: none;
+}
+.box a{
     text-decoration: none;
-    color: black;
 }
 footer {
     bottom: 0;
