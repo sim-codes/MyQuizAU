@@ -80,7 +80,7 @@ input[type="checkbox"] {
     height: 20px;
     border: 1px solid white; /* Set the border color to black */
     background-color: black; /* Set the background color to white */
-    border-radius: 4px; /* Optional: Add rounded corners */
+    border-radius: 2px; /* Optional: Add rounded corners */
     outline: none; /* Remove focus border */
     position: relative; /* Needed for the pseudo-element positioning */
 }
@@ -93,14 +93,19 @@ input[type="checkbox"]:checked {
 
 /* Checkmark indicator for checked checkboxes */
 input[type="checkbox"]::before {
-    content: '\1D941'; /* Unicode checkmark symbol */
-    font-size: 24px; /* Adjust the size of the checkmark */
+    content: '✔'; /* Unicode checkmark symbol */
+    font-size: 18px; /* Adjust the size of the checkmark */
     color: white; /* Color of the checkmark */
     position: absolute;
     background-color: transparent;
-    border-radius: 14px;
+    border: 1px solid white;
+   border-radius: 2px;
+    width: 17px;
+    height: 17px;
     top: 50%;
     left: 50%;
+    padding-bottom: 5px;
+    padding-left: 5px;
     transform: translate(-50%, -50%); /* Center the checkmark */
     display: none; /* Initially hide the checkmark */
 }
