@@ -1,0 +1,194 @@
+
+<!DOCTYPE html> 
+
+<html> 
+
+      
+
+<head> 
+
+    <title> 
+
+        Style a checkbox using CSS 
+
+    </title> 
+
+      
+
+    <style> 
+
+        .script { 
+
+            display: block; 
+
+            position: relative; 
+
+            padding-left: 45px; 
+
+            margin-bottom: 15px; 
+
+            cursor: pointer; 
+
+            font-size: 20px; 
+
+        } 
+
+          
+
+        /* Hide the default checkbox */ 
+
+        input[type=checkbox] { 
+
+            visibility: hidden; 
+
+        } 
+
+          
+
+        /* creating a custom checkbox based 
+
+            on demand */ 
+
+        .geekmark { 
+
+            position: absolute; 
+
+            top: 0; 
+
+            left: 0; 
+
+            height: 25px; 
+
+            width: 25px; 
+
+            background-color: green; 
+
+        } 
+
+          
+
+        /* specify the background color to be 
+
+        shown when hovering over checkbox */ 
+
+        .script:hover input ~ .geekmark { 
+
+            background-color: yellow; 
+
+        } 
+
+          
+
+        /* specify the background color to be 
+
+        shown when checkbox is active */ 
+
+        .script input:active ~ .geekmark { 
+
+            background-color: red; 
+
+        } 
+
+          
+
+        /* specify the background color to be 
+
+        shown when checkbox is checked */ 
+
+        .script input:checked ~ .geekmark { 
+
+            background-color: green; 
+
+        } 
+
+          
+
+        /* checkmark to be shown in checkbox */ 
+
+        /* It is not be shown when not checked */ 
+
+        .geekmark:after { 
+
+            content: ""; 
+
+            position: absolute; 
+
+            display: none; 
+
+        } 
+
+          
+
+        /* display checkmark when checked */ 
+
+        .script input:checked ~ .geekmark:after { 
+
+            display: block; 
+
+        } 
+
+          
+
+        /* styling the checkmark using webkit */ 
+
+        /* creating a square to be the sign of 
+
+            checkmark */ 
+
+        .script .geekmark:after { 
+
+            left: 6px; 
+
+            bottom: 5px; 
+
+            width: 6px; 
+
+            height: 6px; 
+
+            border: solid white; 
+
+            border-width: 4px 4px 4px 4px; 
+
+        } 
+
+    </style> 
+
+</head> 
+
+  
+
+<body> 
+
+    <h1>Is GeeksforGeeks Useful?</h1> 
+
+      
+
+    <label class="script" style = "color:green;"> 
+
+        Yes 
+
+        <input type="checkbox"> 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+
+      
+
+    <label class="script" style = "color:green;"> 
+
+        Absolutely Yes 
+
+        <input type="checkbox" checked="checked"> 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+
+</body> 
+
+  
+
+</html>                     
+
+Output:

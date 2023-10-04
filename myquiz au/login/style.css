@@ -1,0 +1,102 @@
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+.image{
+    margin-left: 90px;
+    margin-top: 2px;
+}
+.image img{
+    width: 62%;
+}
+.box{
+    margin-top: 90px;
+    margin-left: -170px;
+}
+h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+.big-inp{
+    border: 2px solid #0069FC;
+    border-radius: 5px;
+    padding: 4px;
+    padding-bottom: 7px;
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+    width: 50vh;
+}
+.mail, .password{
+    margin-top: 4px;
+    margin-right: -8px;
+}
+.mail img, .password img{
+    width: 61%;
+}
+input{
+    width: 75%;
+    height: 25px;
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    font-size: 16px;
+    color: #2F2F2F;
+    opacity: 1;
+    letter-spacing: 1px;
+}
+.forgot{
+    font-size: 10px;
+    margin-top: -15px;
+    padding-bottom: 25px;
+    color: #525252;
+    font-weight: 400;
+}
+.login,.signin{
+    width: 100%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 7px;
+    
+}
+.login{
+    background-color: #0069FC;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-weight: 500;
+}
+.signin{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid #0069FC;
+    background-color: white;
+    color: #0069FC;
+    margin-top: 15px;
+}
+.login:hover, .signin:hover{
+    cursor: pointer;
+}
+.google{
+    margin-top: 1px;
+}
+.google img{
+    width: 60%;
+}
+.no-account{
+    text-align: center;
+    font-size: 14px;
+}
+.join{
+    color: #0069FC;
+    text-decoration: none;
+}
