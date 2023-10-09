@@ -6,16 +6,17 @@ body{
 main{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin: 2rem 0;
 }
 .image{
-    margin-left: 90px;
     margin-top: 12px;
 }
 .image img{
-    width: 430px;
+    width: 27.5rem;
 }
 .box{
-    margin-top: 70px;
+    margin-top: 6rem;
     margin-left: 40px;
     text-align: center;
 }
@@ -66,6 +67,7 @@ input{
     font-size: 12px;
     color: #0069FC;
     padding-top: 1px;
+    padding-left: 2px;
 }
 #link{
     color: #0069FC;

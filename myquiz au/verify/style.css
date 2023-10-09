@@ -6,13 +6,12 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 2rem 0;
 }
 .image{
-    /* margin-left: 90px; */
     margin-top: 12px;
 }
 .image img{
-    /* width: 430px; */
     width: 27.5rem;
 }
 .box{

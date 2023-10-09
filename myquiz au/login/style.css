@@ -4,17 +4,20 @@ body{
 main{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin: 2rem 0;
 }
 .image{
-    margin-left: 90px;
+    margin-right: 30px;
     margin-top: 2px;
 }
 .image img{
-    width: 62%;
+    width: 27.5rem;
 }
 .box{
-    margin-top: 90px;
-    margin-left: -170px;
+    margin-top: 6rem;
+    margin-left: 20px;
+    text-align: center;
 }
 h1{
     font-size: 30px;
