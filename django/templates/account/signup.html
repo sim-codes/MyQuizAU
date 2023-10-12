@@ -1,0 +1,63 @@
+{% extends '_base.html' %}
+{% load static %}
+{% load socialaccount %}
+{% block title %}Sign Up{% endblock title %}
+
+
+{% block content %}
+
+<div class="image">
+    <img src="{% static 'images/Frame 11.png' %}">
+</div>
+
+
+<div class="box">
+    <h1>Sign up to MyQuiz</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <!-- {{ form.as_p }} -->
+
+        <div class="form-group">
+            <div class="big-inp">
+                <div class="mail">
+                    <img src="{% static 'images/Email.png' %}" alt="" >
+                </div>
+            {{ form.username }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="big-inp">
+                <div class="mail">
+                    <img src="{% static 'images/Email.png' %}" alt="" >
+                </div>
+            {{ form.email }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="big-inp">
+                <div class="mail">
+                    <img src="{% static 'images/Password.png' %}" alt="" >
+                </div>
+                {{ form.password1 }}
+            </div>
+        </div>
+
+        <!-- <div class="checkbox">
+            <input type="checkbox" class="small-box">
+            <span>Agree to the Privacy policies & Terms of use</span>
+        </div> -->
+
+        
+        <a href="{% provider_login_url 'google' process="connect" %}">Connect a Twitter account</a>
+        <button type="submit" class="login">Register</button><br>
+        <a href="">
+        <div class="signin"><div class="google"><img src="{% static 'images/Google.png' %}" alt="" ></div>Sign In with Google</div>
+        </a>
+        <p class="no-account">Already have an account? <a href="{% url 'account_login' %}" class="join">Log in</a></p>
+    </form>
+</div>
+
+{% endblock content %}

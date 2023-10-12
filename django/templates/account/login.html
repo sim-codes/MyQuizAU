@@ -1,0 +1,68 @@
+{% extends '_base.html' %}
+{% load static %}
+{% load socialaccount %}
+
+{% block title %}Log In{% endblock title %}
+
+
+{% block content %}
+    <div class="image">
+        <img src="{% static 'images/Frame 11.png' %}">
+    </div>
+
+
+    
+    <div class="box">
+        <h1>Log In to MyQuiz</h1>
+
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li class="{{ message.tags }}">
+                        {{ message|safe }}<a href="#" class="close">x</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <form method="post">
+            {% csrf_token %}
+           
+                <div class="form-group">
+                    <div class="big-inp">
+                        <div class="mail">
+                            <img src="{% static 'images/Email.png' %}" alt="" >
+                        </div>{{ form.login }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="big-inp">
+                        <div class="mail">
+                            <img src="{% static 'images/Password.png' %}" alt="" >
+                        </div>{{ form.password }}
+                    </div>
+                </div>
+
+            {% if redirect_field_value %}
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+
+            <button type="submit" class="login">Log In</button>
+            <a href="{% provider_login_url 'google' process="connect" %}">Connect a Twitter account</a>
+
+
+
+            
+
+
+            <p class="forgot"><a href="{% url 'account_reset_password' %}">Forgot Password?</a></p>
+
+            <button class="signin"><div class="google"><img src="{% static 'images/Google.png' %}" alt="" ></div>Sign In with Google</button>
+            <p class="no-account">Don't have an account? <a href="{% url 'account_signup' %}" class="join">Join Us</a></p>
+        </form>
+
+    </div>
+    
+
+{% endblock content %}

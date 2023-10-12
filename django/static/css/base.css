@@ -1,0 +1,194 @@
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 1rem;
+    padding: 1rem;
+}
+.image{
+    margin-right: 30px;
+    margin-top: 2px;
+}
+.image img{
+    width: 27.5rem;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 4rem; */
+    padding: .5rem;
+    text-align: center;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.big-inp{
+    border: 2px solid #0069FC;
+    border-radius: 5px;
+    /* padding: 0 .5rem; */
+    /* padding-bottom: 7px; */
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: center;
+    margin: .5rem 0;
+    width: 50vh;
+    overflow: hidden;
+}
+.mail, .password{
+    margin-top: 4px;
+    margin-right: -8px;
+}
+.mail img, .password img{
+    width: 61%;
+}
+input{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    font-size: 16px;
+    color: #2F2F2F;
+    opacity: 1;
+    letter-spacing: 1px;
+}
+.forgot a{
+    text-decoration: none;
+    font-size: .9rem;
+    color: #525252;
+}
+.forgot{
+    /* font-size: 10px; */
+    /* margin-top: -15px; */
+    /* padding-bottom: 25px; */
+    font-weight: 400;
+}
+
+.login,.signin{
+    width: 100%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 7px;
+    
+}
+.login{
+    background-color: #0069FC;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-weight: 500;
+}
+.signin{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid #0069FC;
+    background-color: white;
+    color: #0069FC;
+    margin-top: 15px;
+}
+.login:hover, .signin:hover{
+    cursor: pointer;
+}
+.google{
+    margin-top: 1px;
+}
+.google img{
+    width: 60%;
+}
+.no-account{
+    text-align: center;
+    font-size: 14px;
+}
+.join{
+    color: #0069FC;
+    text-decoration: none;
+}
+
+/* Signup */
+.checkbox{
+    /* font-size: 11px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .4rem;
+    margin: .5rem 0;
+    /* margin-top: -15px; */
+    /* padding-bottom: 25px; */
+    color: #525252;
+    font-weight: 400;
+    border-color: black;
+    opacity: 1;
+}
+
+.small-box{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+span{
+    /* width: 45%; */
+    color: black;
+    opacity: 1;
+    font-size: .9rem;
+    /* margin-top: 2px; */
+}
+
+
+/* messages */
+ul.messages {
+    margin:10px 100px;
+    padding:0;
+    list-style-type:
+    none;
+}
+ul.messages li.success,
+ul.messages li.warning,
+ul.messages li.error,
+ul.messages li.info {
+    margin: .2rem;
+    padding:14px 20px;
+    list-style:none;
+    color:#fff;
+}
+
+ul.messages li.success { background:#81ce81; }
+ul.messages li.success a { color:#0ac33e; }
+
+ul.messages li.error { background:#a30029; color:#e9828e; }
+ul.messages li.error a { color:#e9828e; }
+
+ul.messages li.info { background:#faffae; color:#696b4e; }
+ul.messages li.info a { color:#1586de; }
+
+ul.messages li.warning { background:#de9404; }
+ul.messages li.warning a { color:#f49000; }
+
+ul.messages li a.close {
+    margin:0;
+    float:right;
+    opacity:1;
+    border:0;
+    box-shadow:none;
+    text-shadow:none;
+}
+
+.errorlist{
+    list-style-type:
+    none;
+    text-align: left;
+}
