@@ -23,6 +23,7 @@ urlpatterns = [
     
     # path('accounts/', include('django.contrib.auth.urls')),
 
+    path('social-auth/', include('social_django.urls', namespace='social')),
     # Local apps
     path('accounts/', include('users.urls')),
     # User management

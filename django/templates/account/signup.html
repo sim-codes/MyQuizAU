@@ -1,6 +1,6 @@
 {% extends '_base.html' %}
 {% load static %}
-{% load socialaccount %}
+
 {% block title %}Sign Up{% endblock title %}
 
 
@@ -50,10 +50,8 @@
             <span>Agree to the Privacy policies & Terms of use</span>
         </div> -->
 
-        
-        <a href="{% provider_login_url 'google' process="connect" %}">Connect a Twitter account</a>
         <button type="submit" class="login">Register</button><br>
-        <a href="">
+        <a href="{% url "social:begin" "google-oauth2" %}">
         <div class="signin"><div class="google"><img src="{% static 'images/Google.png' %}" alt="" ></div>Sign In with Google</div>
         </a>
         <p class="no-account">Already have an account? <a href="{% url 'account_login' %}" class="join">Log in</a></p>

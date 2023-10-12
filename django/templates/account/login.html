@@ -1,6 +1,6 @@
 {% extends '_base.html' %}
 {% load static %}
-{% load socialaccount %}
+
 
 {% block title %}Log In{% endblock title %}
 
@@ -49,16 +49,14 @@
             {% endif %}
 
             <button type="submit" class="login">Log In</button>
-            <a href="{% provider_login_url 'google' process="connect" %}">Connect a Twitter account</a>
-
-
-
-            
-
 
             <p class="forgot"><a href="{% url 'account_reset_password' %}">Forgot Password?</a></p>
 
-            <button class="signin"><div class="google"><img src="{% static 'images/Google.png' %}" alt="" ></div>Sign In with Google</button>
+            <a href="{% url "social:begin" "google-oauth2" %}">
+                <div class="signin">
+                    <div class="google"><img src="{% static 'images/Google.png' %}" alt="" ></div>Sign In with Google
+                </div>
+            </a>
             <p class="no-account">Don't have an account? <a href="{% url 'account_signup' %}" class="join">Join Us</a></p>
         </form>
 

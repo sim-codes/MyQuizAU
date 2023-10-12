@@ -52,6 +52,7 @@ INSTALLED_APPS = [
 
     
     # 3rd party
+    'social_django',
     # 'privacy_policy_tools.apps.PrivacyPolicyToolsConfig',
     # 'modeltranslation',
 
@@ -71,6 +72,8 @@ AUTHENTICATION_BACKENDS = [
 
     # Login using email
     'users.authentication.EmailAuthBackend',
+
+    'social_core.backends.google.GoogleOAuth2',
 ]
 ACCOUNT_SESSION_REMEMBER = True
 ACCOUNT_EMAIL_REQUIRED = True
@@ -197,6 +200,8 @@ STATICFILES_FINDERS = [
 ]
 
 
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '519384170894-st9pb6ljeqf9jds0uaoe40ti6kcpp0in.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
 
 # Provider specific settings
 SOCIALACCOUNT_PROVIDERS = {

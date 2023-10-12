@@ -192,3 +192,7 @@ ul.messages li a.close {
     none;
     text-align: left;
 }
+
+form a {
+    text-decoration: none;
+}
