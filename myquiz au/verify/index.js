@@ -16,12 +16,21 @@ function addListener(input) {
     });
   }
   const inputs = ["input1", "input2", "input3", "input4" , "input5", "input6"];
+  inputs.forEach((elem) => {
+  const element = document.getElementById(elem);
+  addListener(element);
+  })
 
-inputs.map((id) => {
-  const input = document.getElementById(id);
-  addListener(input);
-});
+// inputs.map((id) => {
+//   const input = document.getElementById(id);
+//   addListener(input);
+// });
 
+// for(let i = 0; i<inputs.length; i++){
+//   const input = inputs[i];
+//   const element = document.getElementById(input);
+//   addListener(element);
+// }
 let timeLeft = 60;
 
 // Function to update the countdown timer
